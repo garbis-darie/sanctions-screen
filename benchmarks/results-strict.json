@@ -1,0 +1,116 @@
+{
+  "summary": {
+    "total_cases": 10,
+    "tp": 8,
+    "fp": 0,
+    "tn": 2,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "accuracy": 1,
+    "generated_at": "2026-03-25T21:28:05.332Z",
+    "label": "Synthetic-benchmark"
+  },
+  "rows": [
+    {
+      "query": "Viktor Bout",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-12345",
+      "top_entry_id": "OFAC-12345",
+      "top_score": 1,
+      "pass": true,
+      "note": "Exact primary-name hit"
+    },
+    {
+      "query": "Victor But",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-12345",
+      "top_entry_id": "OFAC-12345",
+      "top_score": 1,
+      "pass": true,
+      "note": "Alias typo variant"
+    },
+    {
+      "query": "Tornado.cash",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-11111",
+      "top_entry_id": "OFAC-11111",
+      "top_score": 1,
+      "pass": true,
+      "note": "Alias with punctuation normalization"
+    },
+    {
+      "query": "Garantex",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "EU-2022-001",
+      "top_entry_id": "EU-2022-001",
+      "top_score": 1,
+      "pass": true,
+      "note": "Alias short form"
+    },
+    {
+      "query": "HIDDEN COBRA",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-22222",
+      "top_entry_id": "OFAC-22222",
+      "top_score": 1,
+      "pass": true,
+      "note": "Known alias"
+    },
+    {
+      "query": "Lazarous Grup",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-22222",
+      "top_entry_id": "OFAC-22222",
+      "top_score": 0.846,
+      "pass": true,
+      "note": "Misspelling with fuzzy match"
+    },
+    {
+      "query": "Acme Payments Ltd",
+      "expected_hit": false,
+      "predicted_hit": false,
+      "expected_entry_id": null,
+      "top_entry_id": null,
+      "top_score": null,
+      "pass": true,
+      "note": "Expected non-hit"
+    },
+    {
+      "query": "John Smith",
+      "expected_hit": false,
+      "predicted_hit": false,
+      "expected_entry_id": null,
+      "top_entry_id": null,
+      "top_score": null,
+      "pass": true,
+      "note": "Expected non-hit"
+    },
+    {
+      "query": "Hydra Marketplace",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "OFAC-67890",
+      "top_entry_id": "OFAC-67890",
+      "top_score": 1,
+      "pass": true,
+      "note": "Entity alias variant"
+    },
+    {
+      "query": "Al Qaida",
+      "expected_hit": true,
+      "predicted_hit": true,
+      "expected_entry_id": "UN-6908",
+      "top_entry_id": "UN-6908",
+      "top_score": 1,
+      "pass": true,
+      "note": "Transliteration variant"
+    }
+  ]
+}

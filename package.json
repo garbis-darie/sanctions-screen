@@ -1,0 +1,10 @@
+{
+  "name": "sanctions-screen",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "benchmark": "node ./scripts/run-benchmark.js --corpus ./benchmarks/corpus.json --out ./benchmarks/results.json",
+    "benchmark:strict": "node ./scripts/run-benchmark.js --threshold 0.8 --corpus ./benchmarks/corpus.json --out ./benchmarks/results-strict.json"
+  }
+}
